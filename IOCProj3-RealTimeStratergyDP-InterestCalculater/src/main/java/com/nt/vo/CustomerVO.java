@@ -6,7 +6,7 @@ public class CustomerVO {
 	    private  String   pamt;
 	    private  String   rate;
 	    private String time;
-	    //setter and getters (alt+shift+s ,r)
+	    
 		public String getCustName() {
 			return custName;
 		}
@@ -39,7 +39,7 @@ public class CustomerVO {
 		}
 		
 	    
-	    //toString (alt+shift+s ,s)
+	    
 		@Override
 		public String toString() {
 			return "CustomerVO [custName=" + custName + ", custAddrs=" + custAddrs + ", pamt=" + pamt + ", rate=" + rate

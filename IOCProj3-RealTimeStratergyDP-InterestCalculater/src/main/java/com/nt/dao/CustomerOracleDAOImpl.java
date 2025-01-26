@@ -27,9 +27,9 @@ public final class CustomerOracleDAOImpl implements ICustomerDAO {
 		PreparedStatement ps=null;
 		int count=0;
 		try {
-			//get pooled jdbc con object
+			
 			con=ds.getConnection();
-			//create PreparedStaement object having pre-compiled SQL query
+			
 			ps=con.prepareStatement(REALTIMEDI_CUSTOMER_INSERT_QUERY);
 			//set query param values
 			ps.setString(1, bo.getCustName());

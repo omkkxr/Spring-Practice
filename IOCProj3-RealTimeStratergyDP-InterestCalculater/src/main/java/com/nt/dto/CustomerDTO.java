@@ -8,7 +8,7 @@ public class CustomerDTO implements Serializable {
 	    private  Float   pamt;
 	    private  Float   rate;
 	    private Float time;
-	    //setter and getters  (alt+shift+s ,r  ->select all)
+	    
 		public String getCustName() {
 			return custName;
 		}
@@ -41,7 +41,7 @@ public class CustomerDTO implements Serializable {
 		}
 		
 	    
-		//toString
+		
 		@Override
 		public String toString() {
 			return "CustomerDTO [custName=" + custName + ", custAddrs=" + custAddrs + ", pamt=" + pamt + ", rate="

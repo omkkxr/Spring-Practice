@@ -19,7 +19,7 @@ public final class CustomerMgmtServiceImpl implements ICustomerMgmtService {
 	 
 	@Override
 	public String calculateSimpleIntrest(CustomerDTO dto) throws Exception {
-		//calculate simple intrest amount  (b.logic)
+		//calculate simple intrest amount  (bussiness logic)
 		float intrAmt=(dto.getPamt()*dto.getRate()*dto.getTime())/100.0f;
 		//create BO class obj having persistable data
 		CustomerBO bo=new CustomerBO();
@@ -29,7 +29,7 @@ public final class CustomerMgmtServiceImpl implements ICustomerMgmtService {
 		bo.setRate(dto.getRate());
 		bo.setTime(dto.getTime());
 		bo.setIntrestAmount(intrAmt);
-		//use DAO
+		
 		int count=dao.insert(bo);
 		  // terinary operator   <condition>?<sucess>:<failure>
 		return  count==1?"Customer registered sucessfully---> SimpleIntrest amount::"+intrAmt:"Customer registration failed";   

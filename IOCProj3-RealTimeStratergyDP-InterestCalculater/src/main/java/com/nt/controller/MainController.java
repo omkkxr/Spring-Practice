@@ -21,7 +21,7 @@ public class MainController {
 		dto.setPamt(Float.parseFloat(vo.getPamt()));
 		dto.setTime(Float.parseFloat(vo.getTime()));
 		dto.setRate(Float.parseFloat(vo.getRate()));
-		//use service
+		//use service method
 		String result=service.calculateSimpleIntrest(dto);
 		return result;
 	}

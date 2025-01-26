@@ -23,10 +23,10 @@ public final class CustomerMySQLDAOImpl implements ICustomerDAO {
 	@Override
 	public int insert(CustomerBO bo) throws Exception {
 		int count=0;
-		//get Pooled jdbc con object and creatd PreparedStatement obj
+		
 		try(Connection con=ds.getConnection();
 				PreparedStatement ps=con.prepareStatement(REALTIMEDI_CUSTOMER_INSERT_QUERY)	){   //try with resource
-			//set query param values
+			
 			ps.setString(1, bo.getCustName());
 			ps.setString(2, bo.getCustAddrs());
 			ps.setFloat(3,bo.getPamt());

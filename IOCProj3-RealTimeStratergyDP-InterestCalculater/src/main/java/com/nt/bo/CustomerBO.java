@@ -1,14 +1,14 @@
 package com.nt.bo;
 
 public class CustomerBO {
-	 // bean properties
+	// bean properties
     private String custName;
     private String custAddrs;
     private  Float   pamt;
     private  Float   rate;
     private Float time;
     private  Float intrestAmount;
-    //setter and getters  (alt+shift+s ,r  ->select all)
+    
 	public String getCustName() {
 		return custName;
 	}
@@ -46,7 +46,7 @@ public class CustomerBO {
 		this.intrestAmount = intrestAmount;
 	}
 	
-    //toString (alt+shift+s, s)
+    
 	
 	@Override
 	public String toString() {
