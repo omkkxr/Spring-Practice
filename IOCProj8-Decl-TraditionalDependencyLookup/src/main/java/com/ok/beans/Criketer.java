@@ -20,10 +20,11 @@ public class Criketer {
 
 	public void batting() {
 		System.out.println("batting() method of Criketer. ");
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("com/ok/cfgs/applicationContext.xml");
+		ClassPathXmlApplicationContext ctx = 
+				new ClassPathXmlApplicationContext("com/ok/cfgs/applicationContext.xml");
 		CriketerBat bat = ctx.getBean("bat", CriketerBat.class);
 		int runs = bat.scoreRun();
-		System.out.println("Criketer is batting on : " + runs);
+		System.out.println("Criketer is batting on : " +this.bat+" "+ runs);
 		ctx.close();
 	}
 }
