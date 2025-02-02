@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ok</groupId>
-  <artifactId>IOCProj2-SpringBeanLifeCycle-Declarative</artifactId>
+  <artifactId>IOCProj8-Decl-TraditionalDependencyLookup</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>IOCProj2-SpringBeanLifeCycle-Declarative</name>
+  <name>IOCProj8-Decl-TraditionalDependencyLookup</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -25,6 +25,17 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context-support</artifactId>
+    <version>5.3.6</version>
+</dependency>
+   <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.3.6</version>
+</dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -40,20 +51,6 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context-support</artifactId>
-    <version>6.2.2</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
-<dependency>
-    <groupId>javax.annotation</groupId>
-    <artifactId>javax.annotation-api</artifactId>
-    <version>1.3.2</version>
-</dependency>
-
-
   </dependencies>
 
   <build>
